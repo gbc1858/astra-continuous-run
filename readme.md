@@ -15,7 +15,7 @@ The `astra_in.in` is the parent astra input file for further modifications.
     python3 rec_run.py -s -0.025
     ```
  - To mimic the solenoid scan, use argument `-f` following with the desired input file, `-s` following with the 
-start of the solenoid scan field [Gauss], `-e` with end of the scan field [Gauss], and `-st` with the scan step size 
+start of the solenoid scan field [Gauss], `-e` with the end of the scan field [Gauss], and `-st` with the scan step size 
 [Gauss].
     ```python
     python3 rec_run.py -s -250 -e -280 -st -20

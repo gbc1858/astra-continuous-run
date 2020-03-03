@@ -1,0 +1,92 @@
+ &NEWRUN
+  Loop=F
+  Distribution='test.ini'
+  Xoff=0
+  Yoff=0
+  Zoff=1E-5
+  TRACK_ALL=T
+  PHASE_SCAN=F
+  AUTO_PHASE=F
+  check_ref_part=F
+  L_rm_back=F
+  Track_on_Axis=F
+  H_max=0.001
+  H_min=0
+  MAX_STEP=100000
+  Z_min=-0.00254000
+ /
+
+ &OUTPUT
+  ZSTART=0, Zphase=1, ZSTOP=2.547
+  Zemit=2000
+  Lmagnetized=F, Lsub_Larmor=F
+  RefS=T
+  EmitS=T
+  PhaseS=T
+  T_PHASES=F
+  Tr_emitS=F
+  TcheckS=T
+  CathodeS=T
+  Local_emit=F
+  High_res=T
+ /
+
+ &CHARGE
+  Loop=F
+  LSPCH=F
+  Lmirror=F
+  Nrad=10
+  Cell_var=2
+  Nlong_in=10
+  N_min=30
+  Max_scale=0.05
+  Max_count=40
+ /
+
+ &CAVITY
+  Loop=F
+  LEfield=T
+  File_Efield(1)='your_3D_field_files'
+  Nue(1)=1.3161276885390001
+  MaxE(1)=34.25933451
+  Phi(1)=227.63
+  C_pos(1)=0.010208614838
+  Com_grid='all'
+  C_smooth(1)=3
+  C_higher_order(1)=T
+ /
+
+ &SOLENOID
+  Loop=F
+  LBfield=T
+
+ ! bucking sol
+  File_Bfield(1)='green_remeasure_center_ASTRA.bz'
+  S_smooth(1)=3
+  S_higher_order(1)=T
+  MaxB(1)=0
+  S_pos(1)=-0.1230
+
+ ! matching sol
+  File_Bfield(2)='green_remeasure_center_ASTRA.bz'
+  S_smooth(2)=3
+  S_higher_order(2)=T
+  MaxB(2)=0
+  S_pos(2)=0.1230
+
+ ! imaging sol
+  File_Bfield(3)='blue_center_ASTRA.bz'
+  S_smooth(3)=3
+  S_higher_order(3)=T
+  MaxB(3)=-0.032
+  S_pos(3)=0.782
+ /
+
+ &QUADRUPOLE
+  Loop=F
+  Lquad=F
+  Q_pos(1)=0.6, Q_length(1)=0.05
+  Q_grad(1)=0.01
+  Q_bore(1)=0.1
+  Q_smooth(1)=3
+/

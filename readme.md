@@ -2,7 +2,11 @@
 
 ## Description
 This file can be used for 1) mimicking the solenoid scan, and 2) loop all of the particle distribution `.ini` files under 
-the same directory.
+the same directory. 
+
+This file is only functional on macOS. For Windows or LINUX, you need to download other astra programs from Astra (Desy).
+
+
 
 ## Usage
 The `astra_in.in` is the parent astra input file for further modifications.

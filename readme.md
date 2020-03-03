@@ -4,7 +4,7 @@
 This file can be used for 1) mimicking the solenoid scan, and 2) loop all of the particle distribution `.ini` files under 
 the same directory. 
 
-This file is only functional on macOS. For Windows or LINUX, you need to download other astra programs from Astra (Desy).
+This file is only functional on macOS. For Windows or LINUX, you need to download other astra programs from [Astra (Desy)](http://www.desy.de/~mpyflo/).
 
 
 

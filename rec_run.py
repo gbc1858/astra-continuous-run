@@ -38,7 +38,7 @@ def modify_arg_file(file_name=None, value=None):
 
         if value is not None:
             # max_b_line = contents[68]
-            max_b_line = contents[80]   # 80 if space charge module is taken into account
+            max_b_line = contents[80]  # 80 if space charge module is taken into account
             max_b_part = max_b_line.split('=')
             max_b_part[1] = value
             new_max_b_line = '='.join(max_b_part)
@@ -78,6 +78,7 @@ def main(filename=None, start=None, end=None, step=None):
             os.system('./astra astra_in_' + filename + '-solStrength' + str(value) + '.in')
 
     else:
+        # TODO: add raise errors and remove quit()
         print('Follow the following format:')
         print('python3 ' + __file__ + ' -f [filename] -start [start] -end [end] -step [step]')
         quit()

@@ -18,6 +18,6 @@ The `astra_in.in` is the parent astra input file for further modifications.
 start of the solenoid scan field [Gauss], `-e` with the end of the scan field [Gauss], and `-st` with the scan step size 
 [Gauss].
     ```python
-    python3 rec_run.py -s -250 -e -280 -st -20
+    python3 rec_run.py -f test.ini -s -250 -e -280 -st -20
     ```
    

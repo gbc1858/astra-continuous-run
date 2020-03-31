@@ -21,12 +21,12 @@ The `astra_in.in` is the parent astra input file for further modifications.
 
  - To simulate all `.ini` files, use argument `-s` following with the fixed solenoid field [T], for example, 
     ```python
-    python3 rec_run.py -s -0.025
+    $ python3 rec_run.py -s -0.025
     ```
  - To mimic the solenoid scan process, use argument `-f` following with the desired input file, `-s` following with the 
 initial solenoid scan field [Gauss], `-e` with the final solenoid scan field [Gauss], and `-st` with the scan step size 
 [Gauss].
     ```python
-    python3 rec_run.py -f test.ini -s -250 -e -280 -st -20
+    $ python3 rec_run.py -f test.ini -s -250 -e -280 -st -20
     ```
    

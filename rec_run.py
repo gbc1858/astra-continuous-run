@@ -54,7 +54,7 @@ def main(filename=None, start=None, end=None, step=None):
     :param filename: particle distribution files
     :param start: imaging solenoid starting B field
     :param end: imaging solenoid final B field
-    :param step: scann step size
+    :param step: scan step size
     :return: None
     """
     if start is not None and filename is None and end is None and step is None:
